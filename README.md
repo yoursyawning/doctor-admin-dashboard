@@ -1,16 +1,47 @@
-# React + Vite
+# 🏥 Doctor Appointment Admin Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **Admin Dashboard** built with **React**, **Vite**, **Tailwind CSS**, and **shadcn/ui** for managing doctors, appointments, and users — connected to a **Spring Boot + MySQL backend**.
 
-Currently, two official plugins are available:
+![Dashboard Preview](./public/dashboard-preview.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+✅ Manage **Doctors** – Add, Edit, Delete, View  
+✅ Manage **Appointments** – Approve, Reschedule, or Cancel  
+✅ Manage **Users/Patients** – View and Update profiles  
+✅ Fully Responsive (Desktop, Tablet, Mobile)  
+✅ Built with **shadcn/ui** + Tailwind CSS for clean, consistent design  
+✅ Role-based access: Admin can perform CRUD, others have limited access  
+✅ Dark mode support (optional if you add it later)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧰 Tech Stack
+
+| Frontend | Backend | Database | Tools |
+|-----------|----------|-----------|--------|
+| React (Vite) | Spring Boot | MySQL | Git & GitHub |
+| Tailwind CSS | Spring Security (JWT) | — | Postman |
+| shadcn/ui | JPA / Hibernate | — | VS Code / IntelliJ |
+
+---
+
+## ⚙️ Setup Instructions
+
+### 🖥️ Frontend (React + Tailwind + shadcn)
+
+```bash
+# Clone the repo
+git clone git@github.com:YOUR_USERNAME/doctor-admin-dashboard.git
+
+# Go into project folder
+cd doctor-admin-dashboard
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
