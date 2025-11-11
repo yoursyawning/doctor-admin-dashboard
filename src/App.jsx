@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Login from "./components/Login";
-import AdminDashboard from "./AdminDashboard";
+import AdminDashboard from "./components/AdminDashboard";
 
 const App = () => {
   const token = localStorage.getItem("token");

@@ -42,7 +42,7 @@ const Login = () => {
         showAlert("Login successful!", "success");
 
         // Redirect after success
-        setTimeout(() => navigate("/admin-dashboard"), 1000);
+        window.location.href = '/admin-dashboard';
       } else {
         throw new Error("Token missing in response");
       }
