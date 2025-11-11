@@ -1,17 +1,23 @@
-// import AdminDashboard from './AdminDashboard'
-import './App.css'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import Login from "./components/Login";
+import AdminDashboard from "./AdminDashboard";
 
-function App() {
- 
+const App = () => {
+  const token = localStorage.getItem("token");
 
   return (
-    <>
-    {/* <AdminDashboard/> */}
-      <div className="bg-blue-500 text-white p-4">
-      <h3>Click me</h3>
-    </div>
-    </>
-  )
-}
+    <Router>
+      <Routes>
+        <Route path="/" element={<Navigate to={token ? "/admin-dashboard" : "/login"} />} />
+        <Route path="/login" element={<Login />} />
+        <Route
+          path="/admin-dashboard"
+          element={token ? <AdminDashboard /> : <Navigate to="/login" />}
+        />
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;
